@@ -1,0 +1,225 @@
+@charset "UTF-8";
+
+
+e-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+body{
+  padding-left: 5px;
+  font-family: 'Calibri';
+  
+  }
+
+.haut{
+  display: flex;
+}
+.bas{
+  display: flex;
+}
+
+.deco{
+  text-align: right;
+}
+
+.enteteleft{
+  width:auto;
+  background-color: #c0910a;
+  height:25px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  
+}
+
+.enteteright{
+  width:auto;
+  background-color: #c0910a;
+  height:25px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  
+}
+
+.entetecenter{
+  width:200px;
+  background-color: #c0910a;
+  height:25px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  padding-bottom: 5px;
+  
+}
+.blockleft{
+ width: 35%;
+ margin-right: 30px;
+}
+
+.blockcenter{
+  width: 35%;
+  margin-right: 30px;
+  
+ }
+
+.blockright{
+width: 35%;
+margin-right: 30px;
+}
+
+h2{
+  color: white;
+  display: inline;
+  width: 80%;
+  
+}
+.titre{
+  
+  display: inline-block;
+}
+
+.titreright{
+  
+  display: inline-block;
+  margin-left: 150px;
+
+}
+
+.triangleleft{
+  width: 25px;
+  height: 25px;
+  float: right;
+  margin: 0 auto;
+}
+.triangleright{
+  width: 25px;
+  height: 25px;
+  float: left;
+  transform: rotate3d(1, 1, -30, 180deg);
+  margin: 0 auto;
+}
+
+.iconeleft{
+  width: 25px;
+  height: 25px;
+  float: left;
+  margin-left: 15px;
+
+}
+
+.iconecenter{
+  width: 25px;
+  height: 25px;
+  float: left;
+  margin: 0 auto;
+  
+}
+
+.iconeright{
+  width: 25px;
+  height: 25px;
+  float: right;
+  margin: 0 auto;
+}
+
+h4{
+  color: #c0910a;
+}
+
+h3{
+  color: white;
+  text-align: center;
+}
+
+.circle {
+  width: auto;
+  
+  border-bottom-right-radius: 200px;
+  border-bottom-left-radius: 200px;
+  background:#41826d;
+  margin-left: auto;
+  margin-right: auto;
+
+
+}
+.circlefooter {
+  width: auto;
+
+  border-top-right-radius: 200px;
+  border-top-left-radius: 200px;
+  background:#41826d;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+h5{
+  color: white;
+  text-align: center;
+}
+
+h1{
+  text-align: center;
+  color: white;
+}
+
+p{
+ text-align: justify;
+}
+
+.photo{
+  height: 200px;
+  border-radius: 200px;
+  margin: 5px 5px 5px;
+}
+
+
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+  color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+  color: white;
+  transform: rotateY(180deg);
+}

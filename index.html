@@ -5,137 +5,174 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="stylesheet" type="text/css" href="styles.css"/>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 <title>Cv Orlane</title>
 </head>
-<body>
-    <div class="haut">
-        <div class="blockleft">
-            
-            <div><img src="deco.png" alt="Orlane tariot"/></div>
-            
-            <div class="enteteleft">
-                <img class="iconeleft" src="formation.png" alt="Orlane tariot"/>
-                <div class="titre"><h2> Formation</h2></div>
-                <img class="triangleleft" src="triangle.JPG" alt="Orlane tariot"/>
-            </div>
-            
-            <h4>My Digital School, Saint Herblain (44), 2020-2021  </h4> 
-            <p>Admise en troisième année de Bachelor Web Design.</p> 
-            <h4>Lycée Notre Dame Du Roc, La Roche Sur  Yon (85), 2018-2020  </h4>
-            <p>Diplômée du (BTS) Brevet de Technicien Supérieur Services Informatiques aux Organisations Option SLAM. </p>
-            <h4>Lycée Jean de Lattre de Tassigny, La  Roche Sur Yon (85), 2017-2018</h4>
-            <p>Diplômée du Baccalauréat technologique (STI2D) série sciences et technologies de l’industrie et du développement durable Option SIN.</p>
+<body >
+    <div id="cv">{{test}}
+        <div class="haut">
+            <div class="blockleft">
+                
+                <div><img src="deco.png" alt="Orlane tariot"/></div>
+                
+                <div class="enteteleft">
+                    <img class="iconeleft" src="formation.png" alt="Orlane tariot"/>
+                    <div class="titre"><h2> Formation</h2></div>
+                    <img class="triangleleft" src="triangle.JPG" alt="Orlane tariot"/>
+                </div>
+                
+                <h4>My Digital School, Saint Herblain (44), 2020-2021  </h4> 
+                <p>Admise en troisième année de Bachelor Web Design.</p> 
+                <h4>Lycée Notre Dame Du Roc, La Roche Sur  Yon (85), 2018-2020  </h4>
+                <p>Diplômée du (BTS) Brevet de Technicien Supérieur Services Informatiques aux Organisations Option SLAM. </p>
+                <h4>Lycée Jean de Lattre de Tassigny, La  Roche Sur Yon (85), 2017-2018</h4>
+                <p>Diplômée du Baccalauréat technologique (STI2D) série sciences et technologies de l’industrie et du développement durable Option SIN.</p>
 
-        </div>
-        <div></div>
-        <div class="blockcenter">
-            <div class="circle">
-                <h1>ORLANE TARIOT</h1>
-                <h3>Designer web & <br> Intégratruce web</h3>
-                <br>
             </div>
-            <p>Actuellement élève en troisième années de bachelor Webdesign, au campus My digital school à Nantes, je souhaite poursuivre mes études en Master UI/UX, en alternance.
-            </p>
-            <div class="blockright">
-                <div class="flip-box">
-                    <div class="flip-box-inner"class="photo">
-                    <div class="flip-box-front">
-                        <img src="Orlane.png" alt="Orlane Tariot"class="photo">
-                    </div>
-                    <div class="flip-box-back">
-                        <img src="logoOrlane.jpg" alt="Orlane Tariot"class="photo">
-                    </div>
+            <div></div>
+            <div class="blockcenter">
+                <div class="circle">
+                    <h1>ORLANE TARIOT</h1>
+                    <h3>Designer web & <br> Intégratrice web</h3>
+                    <br>
+                </div>
+                <p>Actuellement élève en troisième années de bachelor Webdesign, au campus My digital school à Nantes, je souhaite poursuivre mes études en Master UI/UX, en alternance.
+                </p>
+                <div class="blockright">
+                    <div class="flip-box">
+                        <div class="flip-box-inner"class="photo">
+                        <div class="flip-box-front">
+                            <img src="Orlane.png" alt="Orlane Tariot"class="photo">
+                        </div>
+                        <div class="flip-box-back">
+                            <img src="logoOrlane.jpg" alt="Orlane Tariot"class="photo">
+                        </div>
+                        </div>
                     </div>
                 </div>
+
+                <!--<div class="image">
+                
+                </div>-->
             </div>
 
-            <!--<div class="image">
-            
-            </div>-->
+            <div class="blockright">
+                <div class="deco"><img src="deco.png" alt="Orlane tariot"/></div>
+                
+                
+                <div class="enteteright">
+                    <img class="iconeright" src="boulot.png" alt="Orlane tariot"/>
+                    <div class="titreright"><h2> Expériences</h2></div>
+                    <img class="triangleright" src="triangle.JPG" alt="Orlane tariot"/>
+                </div>
+                <div v-for="experience in experiences">
+                    <h4>{{experience.titre}} chez {{experience.employeur}} </h4> 
+                    <p>{{experience.description}}</p></div>
+                
+                
+            </div>
         </div>
+        <div class="bas">
+            <div class="blockleft">
+                
+                
+                <div class="enteteleft">
+                    <img class="iconeleft" src="badge.png" alt="Orlane tariot"/>
+                    <div class="titre"><h2> Savoir-faire</h2></div>
+                    <img class="triangleleft" src="triangle.JPG" alt="Orlane tariot"/>
+                </div>
+                
+                <h4>Langages :</h4>
+                    <p> c#, JavaScript, html, Css, Kotlin, Python.</p>  
+                <h4>Logiciels/Outils:</h4>
+                    <p>Suite Adobe, Microsoft Office, PhpStorm, Laravel, Visual Studio, Vmware, GitHub, Mysql, Mysql WorkBench.
+                </p>    
+            <h4> Activités:</h4>
+                <p>Danse, théâtre, surf, paddle.</p>
+                
+                <img src="deco.png" alt="Orlane tariot"/>
+            </div>
+        
+            <div class="blockcenter">
+                <div class="entetecenter">
+                    <img class="iconeright" src="contact.png" alt="Orlane tariot"/>
+                    <div class="titre"><h2> Contact</h2></div>
+                    
+                </div>
+                <div class="circlefooter">
+                    
+                    <h3>orlanetariot@gmail.com</h3>
+                    
+                    <h3>+33 7 81 36 51 27</h3>
+                    
+                    <h3>130 rue du bois hardy 44100 nantes</h3>
+                    
+                    <h3>www.orlanetariot.willr.fr</h3>
+                </div>
+                
+            </div>
+            
+            <div class="blockright">
+                
+                
+                
+                <div class="enteteright">
+                    <img class="iconeright" src="star.png" alt="Orlane tariot"/>
+                    <div class="titreright"><h2> Compétences</h2></div>
+                    <img class="triangleright" src="triangle.JPG" alt="Orlane tariot"/>
+                </div>
+                
+                <h4>Compétences :</h4>
+                <p> Bon relationnel clients et collaborateurs. Sens du service. Conceptions d’applications full stack avec API et bases de données SQL. Gestion de projet avec la méthode agile. Utilisation du gestionnaire de version Git.</p> 
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                <img src="deco.png" class="deco" alt="Orlane tariot"/>
+            </div>
+        </div>
+    </div>
+    <script>
+        new Vue({
+            el: "#cv",
+            data: {
+                test:"bonjour",
+                experiences:[
+                    {
+                        titre: "Assistance Webdisgner & intégrateur web",
+                        description: "Accueil physique et téléphonique, gestion des demandes clients Prise de rendez vous qualifiés, mise à jour des dossiers, gestion des plannings experts",
+                        dates:"Septembre 2020 à Août 2021 ",
+                        employeur:"digimo Invest, Vertou (44)",
+                            
+                    },
+                    {
+                        titre: "Stage, 6 semaines.",
+                        description: "Intégration d’une page web html/ css. Création d’une calculatrice et d’un formulaire en Javascript. Conversion d’une page web en document PDF avec wkhtmltopdf.",
+                        dates:"- Janvier 2020",
+                        employeur:"Log’in Line, Bordeaux (33)",
+                            
+                    },
+                    {
+                        titre: "Stage, 5 semaines.",
+                        description: "Création d’un système applicatif en C#, qui permet la récupération des logs grâce à un web service pour les stocker dans une base de données et les afficher sur un page Web en JavaScript.",
+                        dates:"- Mai à Juin 2019",
+                        employeur:"Espace Technologie, Challans (85)",
+                            
+                    },
+                    
 
-        <div class="blockright">
-            <div class="deco"><img src="deco.png" alt="Orlane tariot"/></div>
-            
-            
-            <div class="enteteright">
-                <img class="iconeright" src="boulot.png" alt="Orlane tariot"/>
-                <div class="titreright"><h2> Expériences</h2></div>
-                <img class="triangleright" src="triangle.JPG" alt="Orlane tariot"/>
-            </div>
-            
-            <h4>digimo Invest, Vertou (44) Septembre 2020 à Août 2021 </h4> 
-            <p>Assistance Webdisgner & intégrateur web<br>
-                Accueil physique et téléphonique, gestion des demandes clients Prise de rendez vous qualifiés, mise à jour des dossiers, gestion des plannings experts</p>
-            <h4>Log’in Line, Bordeaux (33) - Janvier 2020</h4>
-            <p>Stage, 6 semaines.<br>
-                Intégration d’une page web html/ css. Création d’une calculatrice et d’un formulaire en Javascript. Conversion d’une page web en document PDF avec wkhtmltopdf.</p>
-           <h4>Espace Technologie, Challans (85) - Mai à Juin 2019</h4>
-            <p>Stage, 5 semaines.<br>
-                Création d’un système applicatif en C#, qui permet la récupération des logs grâce à un web service pour les stocker dans une base de données et les afficher sur un page Web en JavaScript.</p>
-        
-        </div>
-    </div>
-    <div class="bas">
-        <div class="blockleft">
-            
-            
-            <div class="enteteleft">
-                <img class="iconeleft" src="badge.png" alt="Orlane tariot"/>
-                <div class="titre"><h2> Savoir-faire</h2></div>
-                <img class="triangleleft" src="triangle.JPG" alt="Orlane tariot"/>
-            </div>
-            
-            <h4>Langages :</h4>
-                <p> c#, JavaScript, html, Css, Kotlin, Python.</p>  
-            <h4>Logiciels/Outils:</h4>
-                <p>Suite Adobe, Microsoft Office, PhpStorm, Laravel, Visual Studio, Vmware, GitHub, Mysql, Mysql WorkBench.
-            </p>    
-           <h4> Activités:</h4>
-               <p>Danse, théâtre, surf, paddle.</p>
-               
-               <img src="deco.png" alt="Orlane tariot"/>
-        </div>
-       
-        <div class="blockcenter">
-            <div class="entetecenter">
-                <img class="iconeright" src="contact.png" alt="Orlane tariot"/>
-                <div class="titre"><h2> Contact</h2></div>
+
+                ],
+            },
+            created: function () {
                 
-            </div>
-            <div class="circlefooter">
+            },
+            methods: {
                 
-                <h3>orlanetariot@gmail.com</h3>
-                
-                <h3>+33 7 81 36 51 27</h3>
-                
-                <h3>130 rue du bois hardy 44100 nantes</h3>
-                
-                <h3>www.orlanetariot.willr.fr</h3>
-            </div>
-            
-        </div>
-        
-        <div class="blockright">
-            
-            
-            
-            <div class="enteteright">
-                <img class="iconeright" src="star.png" alt="Orlane tariot"/>
-                <div class="titreright"><h2> Compétences</h2></div>
-                <img class="triangleright" src="triangle.JPG" alt="Orlane tariot"/>
-            </div>
-            
-            <h4>Compétences :</h4>
-               <p> Bon relationnel clients et collaborateurs. Sens du service. Conceptions d’applications full stack avec API et bases de données SQL. Gestion de projet avec la méthode agile. Utilisation du gestionnaire de version Git.</p> 
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-            <img src="deco.png" class="deco" alt="Orlane tariot"/>
-        </div>
-    </div>
+            },
+        });
+    </script>
 </body>
 </html>
