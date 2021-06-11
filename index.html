@@ -10,18 +10,18 @@
 </head>
 <body >
     <div id="cv">
+        <div><img src="Cv.JPG" alt="Orlane tariot"/></div>
         <div class="haut">
             <div class="blockleft">
                 
-                <div><img src="Cv.JPG" alt="Orlane tariot"/></div>
+                
                 
                 <div class="enteteleft">
-                    <div class="titre"><h2> Formation</h2></div>
                 </div>
-                <h4>experiences :</h4>
+                <h4>Qui suis-je ? :</h4>
                 <div v-for="experience in experiences">
                     <p>{{experience.description}}</p></div>
-                <h4>formations :</h4>
+                <h4>formations & Diplômes :</h4>
                 <div v-for="formation in Formations">
                     <h3>{{formation.dates}} chez {{formation.titre}} </h3> 
                     <p>{{formation.description}}</p></div>
@@ -29,15 +29,11 @@
 
             <div class="blockright">
                 <div class="enteteright">
-                    <div class="titreright"><h2> Expériences</h2></div>
                 </div>
                 <h4>experiences :</h4>
                 <div v-for="experience in experiences">
                     <h3>{{experience.titre}} chez {{experience.employeur}} </h3> 
                     <p>{{experience.description}}</p></div>
-                    <h4>compétences :</h4>
-                    <div v-for="competence in competences">
-                        <p>{{competence.description}}</p></div>
                 
                 
             </div>
@@ -45,9 +41,8 @@
         <div class="bas">
             <div class="blockleft">
                 
-                
                 <div class="enteteleft"> 
-                    <div class="titre"><h2> Savoir-faire</h2></div>
+                <div class="titre"><h4> Savoir-faire</h4></div>
                 </div>
 
                 <h4>Langues :</h4>
@@ -66,31 +61,17 @@
                 <div v-for="langage in langages">
                     <p>{{langage.titre}}</p></div>
             </div>
-        
-            <div class="blockcenter">
-                <div class="entetecenter">
-                    <div class="titre"><h2> Contact</h2></div>
-                    
-                </div>
-                <div class="circlefooter">
-                    <h4>informations :</h4>
-                    <div v-for="information in informations">
-                        <p>{{information.mail}} <br> {{information.portable}} <br> {{information.adresse}}<br> {{information.site}}</p></div>
-                        
-                </div>
-                
-            </div>
             
             <div class="blockright">
-                
-                
-                
                 <div class="enteteright">
-                    <div class="title"><h2> Compétences</h2></div>
                 </div>
+                <h4>informations :</h4>
+                    <div v-for="information in informations">
+                        <p>{{information.mail}} <br> {{information.portable}} <br> {{information.adresse}}<br> {{information.site}}</p></div>
+                     
                 <h4>compétences :</h4>
                 <div v-for="competence in competences">
-                    <h3>{{competence.icones}}</h3><p> {{competence.description}}</p></div>
+                    <p>{{competence.icones}} {{competence.description}}</p></div>
             </div>
         </div>
     </div>
