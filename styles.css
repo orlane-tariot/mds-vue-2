@@ -7,9 +7,10 @@ e-responsive {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
+
 body{
   padding-left: 5px;
-  font-family: 'Calibri';
+  font-family: 'Nunito Sans';
   
   }
 
@@ -20,145 +21,53 @@ body{
   display: flex;
 }
 
-.deco{
-  text-align: right;
-}
 
-.enteteleft{
-  width:auto;
-  background-color: #c0910a;
-  height:25px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  
-}
-
-.enteteright{
-  width:auto;
-  background-color: #c0910a;
-  height:25px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  
-}
-
-.entetecenter{
-  width:200px;
-  background-color: #c0910a;
-  height:25px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center;
-  padding-bottom: 5px;
-  
-}
 .blockleft{
- width: 35%;
+ width: 50%;
  margin-right: 30px;
 }
 
-.blockcenter{
-  width: 35%;
-  margin-right: 30px;
-  
- }
-
 .blockright{
-width: 35%;
-margin-right: 30px;
+  width: 50%;
+  margin-right: 30px;
 }
 
 h2{
   color: white;
   display: inline;
   width: 80%;
+  font-family: 'PiepieW01-Regular';
   
 }
 .titre{
   
   display: inline-block;
+  font-family: 'PiepieW01-Regular';
+  letter-spacing: .2rem;
+  word-spacing: 1rem;
 }
 
 .titreright{
   
   display: inline-block;
   margin-left: 150px;
+  font-family: 'PiepieW01-Regular';
+  letter-spacing: .2rem;
+  word-spacing: 1rem;
 
-}
-
-.triangleleft{
-  width: 25px;
-  height: 25px;
-  float: right;
-  margin: 0 auto;
-}
-.triangleright{
-  width: 25px;
-  height: 25px;
-  float: left;
-  transform: rotate3d(1, 1, -30, 180deg);
-  margin: 0 auto;
-}
-
-.iconeleft{
-  width: 25px;
-  height: 25px;
-  float: left;
-  margin-left: 15px;
-
-}
-
-.iconecenter{
-  width: 25px;
-  height: 25px;
-  float: left;
-  margin: 0 auto;
-  
-}
-
-.iconeright{
-  width: 25px;
-  height: 25px;
-  float: right;
-  margin: 0 auto;
 }
 
 h4{
-  color: #c0910a;
+  color: black;
+  font-family: 'PiepieW01-Regular';
+  letter-spacing: .2rem;
+  word-spacing: 1rem;
 }
 
 h3{
-  color: white;
+  color: #e94847;
   text-align: center;
-}
-
-.circle {
-  width: auto;
   
-  border-bottom-right-radius: 200px;
-  border-bottom-left-radius: 200px;
-  background:#41826d;
-  margin-left: auto;
-  margin-right: auto;
-
-
-}
-.circlefooter {
-  width: auto;
-
-  border-top-right-radius: 200px;
-  border-top-left-radius: 200px;
-  background:#41826d;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 100px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-
 }
 
 h5{

@@ -9,66 +9,33 @@
 <title>Cv Orlane</title>
 </head>
 <body >
-    <div id="cv">{{test}}
+    <div id="cv">
         <div class="haut">
             <div class="blockleft">
                 
-                <div><img src="deco.png" alt="Orlane tariot"/></div>
+                <div><img src="Cv.JPG" alt="Orlane tariot"/></div>
                 
                 <div class="enteteleft">
-                    <img class="iconeleft" src="formation.png" alt="Orlane tariot"/>
                     <div class="titre"><h2> Formation</h2></div>
-                    <img class="triangleleft" src="triangle.JPG" alt="Orlane tariot"/>
                 </div>
+                <h4>experiences :</h4>
                 <div v-for="experience in experiences">
                     <p>{{experience.description}}</p></div>
-
+                <h4>formations :</h4>
                 <div v-for="formation in Formations">
-                    <h4>{{formation.dates}} chez {{formation.titre}} </h4> 
+                    <h3>{{formation.dates}} chez {{formation.titre}} </h3> 
                     <p>{{formation.description}}</p></div>
-            </div>
-                
-            </div>
-            <div></div>
-            <div class="blockcenter">
-                <div class="circle">
-                    <h1>ORLANE TARIOT</h1>
-                    <h3>Designer web & <br> Intégratrice web</h3>
-                    <br>
-                </div>
-                <p>Actuellement élève en troisième années de bachelor Webdesign, au campus My digital school à Nantes, je souhaite poursuivre mes études en Master UI/UX, en alternance.
-                </p>
-                <div class="blockright">
-                    <div class="flip-box">
-                        <div class="flip-box-inner"class="photo">
-                        <div class="flip-box-front">
-                            <img src="Orlane.png" alt="Orlane Tariot"class="photo">
-                        </div>
-                        <div class="flip-box-back">
-                            <img src="logoOrlane.jpg" alt="Orlane Tariot"class="photo">
-                        </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!--<div class="image">
-                
-                </div>-->
             </div>
 
             <div class="blockright">
-                <div class="deco"><img src="deco.png" alt="Orlane tariot"/></div>
-                
-                
                 <div class="enteteright">
-                    <img class="iconeright" src="boulot.png" alt="Orlane tariot"/>
                     <div class="titreright"><h2> Expériences</h2></div>
-                    <img class="triangleright" src="triangle.JPG" alt="Orlane tariot"/>
                 </div>
+                <h4>experiences :</h4>
                 <div v-for="experience in experiences">
-                    <h4>{{experience.titre}} chez {{experience.employeur}} </h4> 
+                    <h3>{{experience.titre}} chez {{experience.employeur}} </h3> 
                     <p>{{experience.description}}</p></div>
-
+                    <h4>compétences :</h4>
                     <div v-for="competence in competences">
                         <p>{{competence.description}}</p></div>
                 
@@ -79,38 +46,37 @@
             <div class="blockleft">
                 
                 
-                <div class="enteteleft">
-                    <img class="iconeleft" src="badge.png" alt="Orlane tariot"/>
+                <div class="enteteleft"> 
                     <div class="titre"><h2> Savoir-faire</h2></div>
-                    <img class="triangleleft" src="triangle.JPG" alt="Orlane tariot"/>
                 </div>
+
+                <h4>Langues :</h4>
+                <div v-for="langue in langues">
+                    <p>{{langue.titre}} {{langue.description}}</p></div>
                 
-                <h4>Langages :</h4>
-                    <p> c#, JavaScript, html, Css, Kotlin, Python.</p>  
+                <h4> Activités:</h4>
+                <div v-for="activite in activites">
+                    <p>{{activite.titre}}</p></div>
+                
                 <h4>Logiciels/Outils:</h4>
-                    <p>Suite Adobe, Microsoft Office, PhpStorm, Laravel, Visual Studio, Vmware, GitHub, Mysql, Mysql WorkBench.
-                </p>    
-            <h4> Activités:</h4>
-                <p>Danse, théâtre, surf, paddle.</p>
-                
-                <img src="deco.png" alt="Orlane tariot"/>
+                <div v-for="logiciel in logiciels">
+                    <p>{{logiciel.titre}}</p></div>
+
+                <h4>Langages :</h4>
+                <div v-for="langage in langages">
+                    <p>{{langage.titre}}</p></div>
             </div>
         
             <div class="blockcenter">
                 <div class="entetecenter">
-                    <img class="iconeright" src="contact.png" alt="Orlane tariot"/>
                     <div class="titre"><h2> Contact</h2></div>
                     
                 </div>
                 <div class="circlefooter">
-                    
-                    <h3>orlanetariot@gmail.com</h3>
-                    
-                    <h3>+33 7 81 36 51 27</h3>
-                    
-                    <h3>130 rue du bois hardy 44100 nantes</h3>
-                    
-                    <h3>www.orlanetariot.willr.fr</h3>
+                    <h4>informations :</h4>
+                    <div v-for="information in informations">
+                        <p>{{information.mail}} <br> {{information.portable}} <br> {{information.adresse}}<br> {{information.site}}</p></div>
+                        
                 </div>
                 
             </div>
@@ -120,16 +86,11 @@
                 
                 
                 <div class="enteteright">
-                    <img class="iconeright" src="star.png" alt="Orlane tariot"/>
                     <div class="title"><h2> Compétences</h2></div>
-                    <img class="triangleright" src="triangle.JPG" alt="Orlane tariot"/>
                 </div>
-                {{test}}
-
+                <h4>compétences :</h4>
                 <div v-for="competence in competences">
-                    <p>{{competence.description}}</p></div>
-                   
-                <img src="deco.png" class="deco" alt="Orlane tariot"/>
+                    <h3>{{competence.icones}}</h3><p> {{competence.description}}</p></div>
             </div>
         </div>
     </div>
@@ -192,12 +153,90 @@
                 ],
                 competences:[
                     {
-                    
-                        description:"Créative, curieuse et déterminée, j’apprécie tout particulièrement la création, le design et les nouvelles technologies. Polyvalente, je peux créer une maquette et l’intégrer en Html, Css, Java script et/ou sur WordPress. Je peux également réaliser des audits de site web, des créations de wireframes puis des Maquettes XD, ergonomique et accessible en respectant les critères Heuristiques de Bastien et Scapin. En outre des compétences en motion design."
+                        
+                        icones:">",
+                        description:"UI design"
+                            
+                    },
+                    {
+                        
+                        icones:">",
+                        description:"UX design"
+                            
+                    },
+                    {
+                        
+                        icones:">",
+                        description:"Conceptions d’identité visuelle : charte graphique logo"
+                            
+                    },
+                    {
+                        
+                        icones:">",
+                        description:"Maquettage pour site web et application mobile"
+                            
+                    },
+                    {
+                        
+                        icones:">",
+                        description:"Gestion de projet avec la méthode agile"
                             
                     },
                 ],
+                langues:[
+                    {
+                    
+                        titre:"Anglais :",
+                        description:"Niveau B2"
+                            
+                    },
+                    {
+                    
+                        titre:"Espagnol :",
+                        description:"Niveau B1"
+                        
+                },
+                ],
+                activites:[
+                    {
+                    
+                        titre:"danse, théâtre, surf, paddle",
+                            
+                    },
+                    
+                ],
 
+                logiciels:[
+                    {
+                    
+                        titre:"Adobe XD, InDesign, Illustrateur, Photoshop, Premier Pro, After Effects, Microsoft Office, PhpStorm, Laravel, Visual Studio, Vmware, GitHub, Mysql.",
+                            
+                    },
+                    
+                ],
+                langages:[
+                    {
+                    
+                        titre:"Php, JavaScript, html, Css, VuJS.",
+                            
+                    },
+                    
+                ],
+                informations:[
+                    {
+                    
+                        nom:"Tariot",
+                        prenom:"Orlane",
+                        portable:"07.81.36.51.27",
+                        mail:"orlanetariot@gmail.com",
+                        post:"designer & intégrateur web",
+                        adresse:" 130 rue du Bois Hardy, 44100 Nantes",
+                        site:"www.orlanetariot.willr.fr",
+
+                            
+                    },
+                    
+                ],
                 },
             created: function () {
                 
